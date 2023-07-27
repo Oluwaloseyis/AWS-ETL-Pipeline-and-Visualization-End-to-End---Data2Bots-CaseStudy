@@ -1,0 +1,2121 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0623.1502                               -->
+<workbook original-version='18.1' source-build='2023.1.3 (20231.23.0623.1502)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Holiday Shipments' inline='true' name='federated.1qija0x0mls0ts115vbuf0r3atjz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='34.89.230.185' name='postgres.11mx0dx0lcpoxy15xwaa50j6d9bd'>
+            <connection authentication='username-password' class='postgres' dbname='d2b_accessment' one-time-sql='' port='5432' server='34.89.230.185' username='oluwseko5931' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.11mx0dx0lcpoxy15xwaa50j6d9bd' name='Custom SQL Query' type='text'>select &apos;Jan-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jan from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Feb-2022&apos; Order_Month, &#13;
+(select tt_order_hol_feb from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Mar-2022&apos; Order_Month, &#13;
+(select tt_order_hol_mar from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Apr-2022&apos; Order_Month, &#13;
+(select tt_order_hol_apr from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;May-2022&apos; Order_Month, &#13;
+(select tt_order_hol_may from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Jun-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jun from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Jul-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jul from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Aug-2022&apos; Order_Month, &#13;
+(select tt_order_hol_aug from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Sep-2022&apos; Order_Month, &#13;
+(select tt_order_hol_sep from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Oct-2022&apos; Order_Month, &#13;
+(select tt_order_hol_oct from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Nov-2022&apos; Order_Month, &#13;
+(select tt_order_hol_nov from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Dec-2022&apos; Order_Month, &#13;
+(select tt_order_hol_dec from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.11mx0dx0lcpoxy15xwaa50j6d9bd' name='Custom SQL Query' type='text'>select &apos;Jan-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jan from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Feb-2022&apos; Order_Month, &#13;
+(select tt_order_hol_feb from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Mar-2022&apos; Order_Month, &#13;
+(select tt_order_hol_mar from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Apr-2022&apos; Order_Month, &#13;
+(select tt_order_hol_apr from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;May-2022&apos; Order_Month, &#13;
+(select tt_order_hol_may from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Jun-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jun from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Jul-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jul from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Aug-2022&apos; Order_Month, &#13;
+(select tt_order_hol_aug from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Sep-2022&apos; Order_Month, &#13;
+(select tt_order_hol_sep from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Oct-2022&apos; Order_Month, &#13;
+(select tt_order_hol_oct from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Nov-2022&apos; Order_Month, &#13;
+(select tt_order_hol_nov from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Dec-2022&apos; Order_Month, &#13;
+(select tt_order_hol_dec from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>order_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_month]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>order_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_BA205FE996904B7B891BAD7FA51E8DA6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_order]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>total_order</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_BA205FE996904B7B891BAD7FA51E8DA6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tfsmd_date' datatype='date' name='[Calculation_2079255705192833024]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE((&quot;01-&quot;+[order_month]))' />
+      </column>
+      <column aggregation='Sum' caption='YEAR' datatype='integer' name='[Calculation_2079255705193619457]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='YEAR([Calculation_2079255705192833024])' />
+      </column>
+      <column caption='MONTH' datatype='string' name='[Calculation_2079255705193705474]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;month&apos;, [Calculation_2079255705192833024])' />
+      </column>
+      <column caption='round bar' datatype='integer' name='[Calculation_2079255705198063620]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(0)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_BA205FE996904B7B891BAD7FA51E8DA6]' role='measure' type='quantitative' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[total_order]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='DATE_VIZ'>
+          <field>[Calculation_2079255705193619457]</field>
+          <field>[Calculation_2079255705193705474]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='order_month' />
+        <field-sort-custom-order field='Calculation_2079255705192833024' />
+        <field-sort-custom-order field='Calculation_2079255705193705474' />
+        <field-sort-custom-order field='Calculation_2079255705193619457' />
+        <field-sort-custom-order field='total_order' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_BA205FE996904B7B891BAD7FA51E8DA6'>
+            <properties context=''>
+              <relation connection='postgres.11mx0dx0lcpoxy15xwaa50j6d9bd' name='Custom SQL Query' type='text'>select &apos;Jan-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jan from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Feb-2022&apos; Order_Month, &#13;
+(select tt_order_hol_feb from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Mar-2022&apos; Order_Month, &#13;
+(select tt_order_hol_mar from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Apr-2022&apos; Order_Month, &#13;
+(select tt_order_hol_apr from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;May-2022&apos; Order_Month, &#13;
+(select tt_order_hol_may from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Jun-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jun from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Jul-2022&apos; Order_Month, &#13;
+(select tt_order_hol_jul from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Aug-2022&apos; Order_Month, &#13;
+(select tt_order_hol_aug from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Sep-2022&apos; Order_Month, &#13;
+(select tt_order_hol_sep from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Oct-2022&apos; Order_Month, &#13;
+(select tt_order_hol_oct from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Nov-2022&apos; Order_Month, &#13;
+(select tt_order_hol_nov from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER&#13;
+UNION ALL&#13;
+select &apos;Dec-2022&apos; Order_Month, &#13;
+(select tt_order_hol_dec from oluwseko5931_analytics.agg_public_holiday) TOTAL_ORDER</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Totals' inline='true' name='federated.06k5m800xjmrmi1bmlou80t965hp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='34.89.230.185' name='postgres.0gs3hs21weci5z1glop620oj1wku'>
+            <connection authentication='username-password' class='postgres' dbname='d2b_accessment' one-time-sql='' port='5432' server='34.89.230.185' username='oluwseko5931' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0gs3hs21weci5z1glop620oj1wku' name='Custom SQL Query' type='text'>select * from oluwseko5931_analytics.agg_shipments</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.0gs3hs21weci5z1glop620oj1wku' name='Custom SQL Query' type='text'>select * from oluwseko5931_analytics.agg_shipments</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ingestion_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ingestion_date]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>ingestion_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_9FBF925822714ABE83B331913A3796E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tt_late_shipments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tt_late_shipments]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>tt_late_shipments</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_9FBF925822714ABE83B331913A3796E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tt_undelivered_items</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tt_undelivered_items]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>tt_undelivered_items</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_9FBF925822714ABE83B331913A3796E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_9FBF925822714ABE83B331913A3796E0]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[tt_late_shipments]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[tt_undelivered_items]' role='measure' type='quantitative' />
+      <column-instance column='[tt_late_shipments]' derivation='Sum' name='[sum:tt_late_shipments:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tt_undelivered_items]' derivation='Sum' name='[sum:tt_undelivered_items:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.06k5m800xjmrmi1bmlou80t965hp].[sum:tt_late_shipments:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.06k5m800xjmrmi1bmlou80t965hp]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.06k5m800xjmrmi1bmlou80t965hp].[sum:tt_undelivered_items:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_9FBF925822714ABE83B331913A3796E0'>
+            <properties context=''>
+              <relation connection='postgres.0gs3hs21weci5z1glop620oj1wku' name='Custom SQL Query' type='text'>select * from oluwseko5931_analytics.agg_shipments</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Custom SQL Query (d2b_accessment)' inline='true' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='34.89.230.185' name='postgres.1uhwhqz1oqu77j1fwtk5i0om9its'>
+            <connection authentication='username-password' class='postgres' dbname='d2b_accessment' one-time-sql='' port='5432' server='34.89.230.185' username='oluwseko5931' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.1uhwhqz1oqu77j1fwtk5i0om9its' name='Custom SQL Query' type='text'>select * from oluwseko5931_analytics.best_performing_product</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.1uhwhqz1oqu77j1fwtk5i0om9its' name='Custom SQL Query' type='text'>select * from oluwseko5931_analytics.best_performing_product</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ingestion_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ingestion_date]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>ingestion_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>most_ordered_day</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[most_ordered_day]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>most_ordered_day</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_public_holiday</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_public_holiday]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>is_public_holiday</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tt_review_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tt_review_points]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>tt_review_points</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_one_star_review</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_one_star_review]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_one_star_review</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_two_star_review</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_two_star_review]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_two_star_review</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_three_star_review</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_three_star_review]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_three_star_review</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_four_star_review</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_four_star_review]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_four_star_review</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_five_star_review</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_five_star_review]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_five_star_review</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_early_shipments</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_early_shipments]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_early_shipments</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_late_shipments</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[pct_late_shipments]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>pct_late_shipments</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B85137AF4951499D8E00FE70D4F02C14]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='pct_one' datatype='string' name='[Calculation_2079255705282392069]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_one_star_review],1))+&apos;%&apos;' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_B85137AF4951499D8E00FE70D4F02C14]' role='measure' type='quantitative' />
+      <column caption='pct_late' datatype='string' name='[pct_early (copy)_2079255705286774795]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_late_shipments],1))+&apos;%&apos;' />
+      </column>
+      <column caption='pct_early' datatype='string' name='[pct_five (copy)_2079255705285885962]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_early_shipments],1))+&apos;%&apos;' />
+      </column>
+      <column caption='pct_five' datatype='string' name='[pct_four (copy)_2079255705284501513]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_five_star_review],1))+&apos;%&apos;' />
+      </column>
+      <column caption='pct_two' datatype='string' name='[pct_one (copy)_2079255705283510278]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_two_star_review],1))+&apos;%&apos;' />
+      </column>
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[pct_one_star_review]' role='measure' type='quantitative' />
+      <column caption='pct_four' datatype='string' name='[pct_three (copy)_2079255705283850248]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_four_star_review],1))+&apos;%&apos;' />
+      </column>
+      <column caption='pct_three' datatype='string' name='[pct_two (copy)_2079255705283682311]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(ROUND([pct_three_star_review],1))+&apos;%&apos;' />
+      </column>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='ingestion_date' />
+        <field-sort-custom-order field='product_name' />
+        <field-sort-custom-order field='most_ordered_day' />
+        <field-sort-custom-order field='is_public_holiday' />
+        <field-sort-custom-order field='tt_review_points' />
+        <field-sort-custom-order field='pct_one_star_review' />
+        <field-sort-custom-order field='Calculation_2079255705282392069' />
+        <field-sort-custom-order field='pct_one (copy)_2079255705283510278' />
+        <field-sort-custom-order field='pct_two (copy)_2079255705283682311' />
+        <field-sort-custom-order field='pct_three (copy)_2079255705283850248' />
+        <field-sort-custom-order field='pct_four (copy)_2079255705284501513' />
+        <field-sort-custom-order field='pct_five (copy)_2079255705285885962' />
+        <field-sort-custom-order field='pct_early (copy)_2079255705286774795' />
+        <field-sort-custom-order field='pct_two_star_review' />
+        <field-sort-custom-order field='pct_three_star_review' />
+        <field-sort-custom-order field='pct_four_star_review' />
+        <field-sort-custom-order field='pct_five_star_review' />
+        <field-sort-custom-order field='pct_early_shipments' />
+        <field-sort-custom-order field='pct_late_shipments' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_B85137AF4951499D8E00FE70D4F02C14'>
+            <properties context=''>
+              <relation connection='postgres.1uhwhqz1oqu77j1fwtk5i0om9its' name='Custom SQL Query' type='text'>select * from oluwseko5931_analytics.best_performing_product</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Holiday Shipments' name='federated.1qija0x0mls0ts115vbuf0r3atjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qija0x0mls0ts115vbuf0r3atjz'>
+            <column caption='tfsmd_date' datatype='date' name='[Calculation_2079255705192833024]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE((&quot;01-&quot;+[order_month]))' />
+            </column>
+            <column aggregation='Sum' caption='YEAR' datatype='integer' name='[Calculation_2079255705193619457]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='YEAR([Calculation_2079255705192833024])' />
+            </column>
+            <column caption='MONTH' datatype='string' name='[Calculation_2079255705193705474]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;month&apos;, [Calculation_2079255705192833024])' />
+            </column>
+            <column caption='round bar' datatype='integer' name='[Calculation_2079255705198063620]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum(0)' />
+            </column>
+            <column-instance column='[Calculation_2079255705193619457]' derivation='None' name='[none:Calculation_2079255705193619457:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_2079255705193705474]' derivation='None' name='[none:Calculation_2079255705193705474:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[order_month]' role='dimension' type='nominal' />
+            <column-instance column='[total_order]' derivation='Sum' name='[sum:total_order:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[total_order]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2079255705198063620]' derivation='User' name='[usr:Calculation_2079255705198063620:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qija0x0mls0ts115vbuf0r3atjz].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qija0x0mls0ts115vbuf0r3atjz].[usr:Calculation_2079255705198063620:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1qija0x0mls0ts115vbuf0r3atjz].[sum:total_order:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1qija0x0mls0ts115vbuf0r3atjz].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1qija0x0mls0ts115vbuf0r3atjz].[Multiple Values]' scope='rows' value='Orders' />
+            <encoding attr='space' class='0' field='[federated.1qija0x0mls0ts115vbuf0r3atjz].[Multiple Values]' field-type='quantitative' max='20.245274627' range-type='fixedmax' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1qija0x0mls0ts115vbuf0r3atjz].[none:Calculation_2079255705193705474:nk]' value='71' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#468b97' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='10' />
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <path column='[federated.1qija0x0mls0ts115vbuf0r3atjz].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='14.547999382019043' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-markers-mode' value='auto' />
+                <format attr='mark-color' value='#f3aa60' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qija0x0mls0ts115vbuf0r3atjz].[Multiple Values]</rows>
+        <cols>([federated.1qija0x0mls0ts115vbuf0r3atjz].[none:Calculation_2079255705193619457:ok] / [federated.1qija0x0mls0ts115vbuf0r3atjz].[none:Calculation_2079255705193705474:nk])</cols>
+      </table>
+      <simple-id uuid='{BB0DBAEF-C15D-4BF0-BBB5-13762C63FC9C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Late Shipments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Totals' name='federated.06k5m800xjmrmi1bmlou80t965hp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06k5m800xjmrmi1bmlou80t965hp'>
+            <column-instance column='[tt_late_shipments]' derivation='Sum' name='[sum:tt_late_shipments:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[tt_late_shipments]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='120' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d5b79' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='18' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06k5m800xjmrmi1bmlou80t965hp].[sum:tt_late_shipments:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9B02657A-9A1A-4F94-80DC-8E0C818D3E7D}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Undelivered Orders</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Totals' name='federated.06k5m800xjmrmi1bmlou80t965hp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06k5m800xjmrmi1bmlou80t965hp'>
+            <column-instance column='[tt_undelivered_items]' derivation='Sum' name='[sum:tt_undelivered_items:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[tt_undelivered_items]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d5b79' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='18' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06k5m800xjmrmi1bmlou80t965hp].[sum:tt_undelivered_items:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D5EBD4D2-F1D0-4F97-8B77-3D176A70DE84}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[product_name]' derivation='None' name='[none:product_name:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[product_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='183' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d5b79' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='18' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:product_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{99462A07-E319-4160-8F35-053863D9C723}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column datatype='date' name='[most_ordered_day]' role='dimension' type='ordinal' />
+            <column-instance column='[most_ordered_day]' derivation='None' name='[none:most_ordered_day:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='186' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d5b79' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='18' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:most_ordered_day:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F2FD0D44-DD6E-4BD2-B2FD-E07E222F9C30}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[tt_review_points]' derivation='Sum' name='[sum:tt_review_points:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[tt_review_points]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='109' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d5b79' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[sum:tt_review_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9135B3DB-0B35-4634-BC73-9A0D90D47BC3}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column caption='pct_one' datatype='string' name='[Calculation_2079255705282392069]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_one_star_review],1))+&apos;%&apos;' />
+            </column>
+            <column-instance column='[Calculation_2079255705282392069]' derivation='None' name='[none:Calculation_2079255705282392069:nk]' pivot='key' type='nominal' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[pct_one_star_review]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='66' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{86E7C7F8-1249-4F3E-A8F3-18494AB295FB}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[pct_one (copy)_2079255705283510278]' derivation='None' name='[none:pct_one (copy)_2079255705283510278:nk]' pivot='key' type='nominal' />
+            <column caption='pct_two' datatype='string' name='[pct_one (copy)_2079255705283510278]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_two_star_review],1))+&apos;%&apos;' />
+            </column>
+            <column datatype='real' name='[pct_two_star_review]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='66' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8B6FB265-ACAA-456E-9393-7E0E700B5125}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[pct_two (copy)_2079255705283682311]' derivation='None' name='[none:pct_two (copy)_2079255705283682311:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[pct_three_star_review]' role='measure' type='quantitative' />
+            <column caption='pct_three' datatype='string' name='[pct_two (copy)_2079255705283682311]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_three_star_review],1))+&apos;%&apos;' />
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='66' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_two (copy)_2079255705283682311:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{65E47EBA-A6E6-4C58-B1ED-EA2B7AD8943F}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (4)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[pct_three (copy)_2079255705283850248]' derivation='None' name='[none:pct_three (copy)_2079255705283850248:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[pct_four_star_review]' role='measure' type='quantitative' />
+            <column caption='pct_four' datatype='string' name='[pct_three (copy)_2079255705283850248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_four_star_review],1))+&apos;%&apos;' />
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='66' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_three (copy)_2079255705283850248:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BDF60207-064D-4923-9207-B7413FE64642}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (5)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[pct_four (copy)_2079255705284501513]' derivation='None' name='[none:pct_four (copy)_2079255705284501513:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[pct_five_star_review]' role='measure' type='quantitative' />
+            <column caption='pct_five' datatype='string' name='[pct_four (copy)_2079255705284501513]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_five_star_review],1))+&apos;%&apos;' />
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='66' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_four (copy)_2079255705284501513:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D84850EE-83C0-4041-9E84-C30F9830F496}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (6)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>% Early Shipments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[pct_five (copy)_2079255705285885962]' derivation='None' name='[none:pct_five (copy)_2079255705285885962:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[pct_early_shipments]' role='measure' type='quantitative' />
+            <column caption='pct_early' datatype='string' name='[pct_five (copy)_2079255705285885962]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_early_shipments],1))+&apos;%&apos;' />
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='141' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_five (copy)_2079255705285885962:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{678370C4-D2EA-44EA-8D1E-9B902CE4686D}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (7)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>% Late Shipments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (d2b_accessment)' name='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bwzyo10x0ihs61ccmk8w1f3ptuc'>
+            <column-instance column='[pct_early (copy)_2079255705286774795]' derivation='None' name='[none:pct_early (copy)_2079255705286774795:nk]' pivot='key' type='nominal' />
+            <column caption='pct_late' datatype='string' name='[pct_early (copy)_2079255705286774795]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(ROUND([pct_late_shipments],1))+&apos;%&apos;' />
+            </column>
+            <column datatype='real' name='[pct_late_shipments]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='141' />
+            <format attr='height' value='19' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3aa60' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_early (copy)_2079255705286774795:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1F36FB50-E964-4F71-8C5E-0738969B01A8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Report Dashboard'>
+      <style />
+      <size maxheight='768' maxwidth='1600' minheight='768' minwidth='1600' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='97916' id='3' is-scaled='1' param='C:/Users/oluwaloseyi.sekoni/Desktop/Frame 1.png' type-v2='bitmap' w='99000' x='500' y='1042'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='67969' id='5' name='Sheet 1' show-title='false' w='58188' x='1625' y='30208' />
+        <zone h='7552' id='6' name='Sheet 2' show-title='false' w='10469' x='8492' y='14974' />
+        <zone h='8073' id='7' name='Sheet 3' show-title='false' w='13031' x='33016' y='14844' />
+        <zone h='8724' id='8' name='Sheet 4' show-title='false' w='14063' x='83125' y='10677' />
+        <zone h='6250' id='9' name='Sheet 5' show-title='false' w='15000' x='83000' y='25651' />
+        <zone h='8333' id='10' name='Sheet 6' show-title='false' w='11125' x='85125' y='38542' />
+        <zone h='8984' id='11' name='Sheet 7' show-title='false' w='4875' x='62188' y='73828' />
+        <zone h='5990' id='12' name='Sheet 7 (2)' show-title='false' w='5438' x='69438' y='73828' />
+        <zone h='7161' id='13' name='Sheet 7 (3)' show-title='false' w='5063' x='76438' y='73828' />
+        <zone h='8073' id='14' name='Sheet 7 (4)' show-title='false' w='4563' x='83188' y='73828' />
+        <zone h='8464' id='15' name='Sheet 7 (5)' show-title='false' w='4813' x='89750' y='73828' />
+        <zone h='13281' id='16' name='Sheet 7 (6)' w='8938' x='50313' y='11068' />
+        <zone h='33333' id='17' name='Sheet 7 (7)' w='11500' x='63125' y='11589' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='24' param='vert' type-v2='layout-flow' w='99000' x='500' y='1042'>
+                <zone fixed-size='280' forceUpdate='true' h='97916' id='3' is-fixed='true' is-scaled='1' param='C:/Users/oluwaloseyi.sekoni/Desktop/Frame 1.png' type-v2='bitmap' w='99000' x='500' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='67' h='8724' id='8' is-fixed='true' name='Sheet 4' show-title='false' w='14063' x='83125' y='10677'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='102' h='13281' id='16' is-fixed='true' name='Sheet 7 (6)' w='8938' x='50313' y='11068'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='33333' id='17' is-fixed='true' name='Sheet 7 (7)' w='11500' x='63125' y='11589'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='8073' id='7' is-fixed='true' name='Sheet 3' show-title='false' w='13031' x='33016' y='14844'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='58' h='7552' id='6' is-fixed='true' name='Sheet 2' show-title='false' w='10469' x='8492' y='14974'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='48' h='6250' id='9' is-fixed='true' name='Sheet 5' show-title='false' w='15000' x='83000' y='25651'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67969' id='5' is-fixed='true' name='Sheet 1' show-title='false' w='58188' x='1625' y='30208'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='64' h='8333' id='10' is-fixed='true' name='Sheet 6' show-title='false' w='11125' x='85125' y='38542'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='69' h='8984' id='11' is-fixed='true' name='Sheet 7' show-title='false' w='4875' x='62188' y='73828'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='46' h='5990' id='12' is-fixed='true' name='Sheet 7 (2)' show-title='false' w='5438' x='69438' y='73828'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='55' h='7161' id='13' is-fixed='true' name='Sheet 7 (3)' show-title='false' w='5063' x='76438' y='73828'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='8073' id='14' is-fixed='true' name='Sheet 7 (4)' show-title='false' w='4563' x='83188' y='73828'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='8464' id='15' is-fixed='true' name='Sheet 7 (5)' show-title='false' w='4813' x='89750' y='73828'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{68A19452-F8E5-43B4-92B2-57E4F83FB987}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' maximized='true' name='Report Dashboard'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5' />
+        <viewpoint name='Sheet 6' />
+        <viewpoint name='Sheet 7' />
+        <viewpoint name='Sheet 7 (2)' />
+        <viewpoint name='Sheet 7 (3)' />
+        <viewpoint name='Sheet 7 (4)' />
+        <viewpoint name='Sheet 7 (5)' />
+        <viewpoint name='Sheet 7 (6)' />
+        <viewpoint name='Sheet 7 (7)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0BF79C76-157D-42E5-B4B1-76852CB6E1EB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qija0x0mls0ts115vbuf0r3atjz].[:Measure Names]</field>
+            <field>[federated.1qija0x0mls0ts115vbuf0r3atjz].[none:Calculation_2079255705193619457:ok]</field>
+            <field>[federated.1qija0x0mls0ts115vbuf0r3atjz].[none:order_month:nk]</field>
+            <field>[federated.1qija0x0mls0ts115vbuf0r3atjz].[yr:Calculation_2079255705192833024:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CB22D801-921D-4C08-98C0-EA2A5D1FC0F2}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9EBA92E-EFAE-430A-9A8B-AE7F75334BFE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2A95BB36-6D1A-45CD-834F-419C332F1507}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:product_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{346EC61B-07B0-4D04-AF21-AC799B25697F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[yr:most_ordered_day:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A8224E3E-ED62-449B-B11E-9684BD2A74B9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C6BB97FD-2033-4669-8B31-616BCD6C4F06}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7AC7057B-9D03-425F-9B27-005490B8A982}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C4BEBDE2-DF47-4A16-9D8F-787546841AF7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_two (copy)_2079255705283682311:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0F95CE82-682E-4DAE-9EA4-768AB92622BE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_three (copy)_2079255705283850248:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_two (copy)_2079255705283682311:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3662A540-377E-4E96-A0C2-55FBC94B512B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_four (copy)_2079255705284501513:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_three (copy)_2079255705283850248:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_two (copy)_2079255705283682311:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{65A003A1-0AC8-4CBC-8AC2-53F3DE993CB2}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7 (6)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_five (copy)_2079255705285885962:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_four (copy)_2079255705284501513:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_three (copy)_2079255705283850248:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_two (copy)_2079255705283682311:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3DB47202-3098-4615-9C45-65628CC7CBE6}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 7 (7)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:Calculation_2079255705282392069:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_early (copy)_2079255705286774795:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_five (copy)_2079255705285885962:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_four (copy)_2079255705284501513:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_one (copy)_2079255705283510278:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_three (copy)_2079255705283850248:nk]</field>
+            <field>[federated.1bwzyo10x0ihs61ccmk8w1f3ptuc].[none:pct_two (copy)_2079255705283682311:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4706C51F-8F5F-4F09-BBE5-D5C7C8E74CD1}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Report Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
