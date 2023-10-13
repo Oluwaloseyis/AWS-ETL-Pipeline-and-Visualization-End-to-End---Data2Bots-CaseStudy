@@ -1,4 +1,4 @@
-# data2bots_assessment
+# Project Details
 This Repository contains all project files, including,
   1. Python .py files for pipelines
      a. config.py
